@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Repostería Artesanal en Villavicencio | Pasteles y Postres Caseros</title>
+    <meta name="description" content="Repostería artesanal en Villavicencio. Pasteles, tortas y postres hechos con amor, ingredientes frescos y recetas únicas. Endulza tus momentos especiales con nosotros.">
+    <meta name="keywords" content="repostería, pasteles, postres, artesanal, Villavicencio, tortas, cupcakes, brownies, repostería casera">
+    <meta name="author" content="Repostería Artesanal Villavicencio">
+    <meta name="theme-color" content="#a23e6d">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="images/Banner_pagina.png" as="image">
+    <link rel="preload" href="images/logo_redondo.png" as="image">
+    <meta property="og:title" content="Repostería Artesanal en Villavicencio | Pasteles y Postres Caseros">
+    <meta property="og:description" content="Pasteles y postres artesanales en Villavicencio. Sabor y calidad para tus celebraciones.">
+    <meta property="og:image" content="images/Banner_pagina.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CO">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Bakery",
+      "name": "Tierra Dulce Repostería artesanal",
+      "image": "images/Banner_pagina.png",
+      "@id": "",
+      "url": "https://tudominio.com/",
+      "telephone": "+57 300 123 4567",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Carrera 36 a #16 65",
+        "addressLocality": "Villavicencio",
+        "addressRegion": "Meta",
+        "postalCode": "",
+        "addressCountry": "CO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 4.1329229,
+        "longitude": -73.6299253
+      },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "19:00"
+      }]
+    }
+    </script>
+    <!-- Menú hamburguesa -->
+    <style>
+    #menu-toggle { display: none; }
+    /* Hero section */
+    .hero {
+        background: #f8f5f0;
+        padding: 4rem 1rem;
+        overflow: hidden;
+    }
+
+    .hero-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(300px, 1fr) minmax(400px, 1fr);
+        gap: 2rem;
+        align-items: center;
+        position: relative;
+    }
+
+    .hero-text {
+        text-align: left;
+        padding-right: 2rem;
+        z-index: 2;
+    }
+
+    .hero-text h1 {
+        color: #a23e6d;
+        font-size: clamp(2rem, 5vw, 3rem);
+        margin-bottom: 1rem;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .hero-text p {
+        color: #666;
+        font-size: clamp(1rem, 2.5vw, 1.3rem);
+        margin-bottom: 2rem;
+        max-width: 600px;
+    }
+
+    .hero-img {
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 2px 12px rgba(162,62,109,0.08);
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .hero-img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 16/9;
+        display: block;
+    }
+
+    .cta-btn {
+        display: inline-block;
+        background: #a23e6d;
+        color: #fff;
+        padding: 1rem 2rem;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: clamp(1rem, 2vw, 1.2rem);
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 12px rgba(162,62,109,0.08);
+    }
+
+    .cta-btn:hover {
+        background: #f85ca4;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 20px rgba(162,62,109,0.2);
+    }
+
+    @media (max-width: 1024px) {
+        .hero-content {
+            grid-template-columns: 1fr;
+            text-align: center;
+            gap: 3rem;
+        }
+
+        .hero-text {
+            order: 2;
+            padding-right: 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-img {
+            order: 1;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .hero-img img {
+            aspect-ratio: 16/9;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hero {
+            padding: 3rem 1rem;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+        }
+
+        .hero-text p {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            padding: 0 1rem;
+        }
+
+        .cta-btn {
+            padding: 0.8rem 1.8rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .hero {
+            padding: 2rem 0.5rem;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(1.5rem, 3.5vw, 2rem);
+        }
+
+        .hero-text p {
+            font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+            padding: 0 0.5rem;
+        }
+
+        .hero-content {
+            gap: 2rem;
+        }
+
+        .cta-btn {
+            padding: 0.7rem 1.5rem;
+            width: 90%;
+            max-width: 300px;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .hero {
+            padding: 1.5rem 0.5rem;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
+        }
+
+        .hero-text p {
+            font-size: clamp(0.85rem, 1.6vw, 1rem);
+        }
+
+        .cta-btn {
+            padding: 0.6rem 1.2rem;
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 900px) {
+      nav ul { display: none; }
+      #menu-toggle:checked + nav ul { 
+        display: flex; 
+        flex-direction: column; 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 1rem;
+        box-shadow: var(--sombra-suave);
+        z-index: 1000;
+        animation: slideDown 0.3s ease;
+      }
+      .menu-icon { 
+        display: block; 
+        cursor: pointer; 
+        font-size: 2rem; 
+        color: var(--color-primario); 
+        margin-left: 1rem;
+        transition: var(--transicion);
+      }
+      .menu-icon:hover {
+        color: var(--color-secundario);
+      }
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-10px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .menu-icon { display: none; }
+    /* Estilos para el mapa y popup */
+    .mapa-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        margin: 1rem auto 2rem auto;
+        aspect-ratio: 16/9;
+        min-height: 300px;
+        background: #f8f5f0;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 2px 12px rgba(162,62,109,0.08);
+        transition: all 0.3s ease;
+    }
+    #mapa-leaflet {
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+        z-index: 1;
+        transition: border-radius 0.3s ease;
+    }
+    /* Estilos para el popup personalizado */
+    .mapa-popup-custom {
+        font-family: 'Quicksand', Arial, sans-serif;
+        color: #a23e6d;
+        padding: 0.5rem;
+        max-width: 90vw;
+    }
+    .mapa-popup-custom .leaflet-popup-content-wrapper {
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(162,62,109,0.12);
+        padding: 0;
+    }
+    .mapa-popup-custom .leaflet-popup-content {
+        margin: 0.8rem 1rem;
+        font-size: 0.95rem;
+        line-height: 1.4;
+        word-wrap: break-word;
+    }
+    .mapa-interactivo {
+        padding: 2rem 1rem;
+        background: #f8f5f0;
+        text-align: center;
+    }
+    .mapa-interactivo h2 {
+        color: #a23e6d;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    .mapa-interactivo p {
+        color: #666;
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Estilos responsive */
+    @media (max-width: 768px) {
+        .mapa-wrapper {
+            max-width: 100%;
+            margin: 1rem 0 2rem 0;
+            min-height: 250px;
+            border-radius: 12px;
+            aspect-ratio: 4/3;
+        }
+        #mapa-leaflet {
+            border-radius: 12px;
+        }
+        .mapa-popup-custom .leaflet-popup-content {
+            font-size: 0.9rem;
+            margin: 0.6rem 0.8rem;
+        }
+        .mapa-interactivo {
+            padding: 1.5rem 1rem;
+        }
+        .mapa-interactivo h2 {
+            font-size: 1.3rem;
+        }
+        .mapa-interactivo p {
+            font-size: 1rem;
+            padding: 0 1rem;
+        }
+    }
+    @media (max-width: 480px) {
+        .mapa-wrapper {
+            min-height: 200px;
+            border-radius: 8px;
+            aspect-ratio: 3/2;
+            margin: 0.5rem 0 1.5rem 0;
+        }
+        #mapa-leaflet {
+            border-radius: 8px;
+        }
+        .mapa-popup-custom .leaflet-popup-content {
+            font-size: 0.85rem;
+            margin: 0.5rem 0.7rem;
+        }
+        .mapa-interactivo {
+            padding: 1rem 0.5rem;
+        }
+        .mapa-interactivo h2 {
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
+        .mapa-interactivo p {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            padding: 0 0.5rem;
+        }
+        .mapa-btn {
+            font-size: 1rem;
+            padding: 0.6rem 1.5rem;
+            margin-top: 0.8rem;
+        }
+    }
+    /* Estilos para el mensaje de error */
+    .error-mapa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        min-height: inherit;
+        padding: 1.5rem;
+        text-align: center;
+        background: #fff;
+        border-radius: inherit;
+        font-size: 0.95rem;
+    }
+    .error-mapa a {
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        background: #a23e6d;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 20px;
+        font-weight: 700;
+        transition: background 0.2s;
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+    .error-mapa a:hover {
+        background: #f85ca4;
+        transform: scale(1.05);
+    }
+    @media (max-width: 360px) {
+        .mapa-wrapper {
+            aspect-ratio: 2/1;
+            min-height: 180px;
+        }
+        .mapa-interactivo h2 {
+            font-size: 1.1rem;
+        }
+        .mapa-interactivo p {
+            font-size: 0.85rem;
+        }
+        .error-mapa {
+            font-size: 0.85rem;
+            padding: 1rem;
+        }
+        .error-mapa a {
+            font-size: 0.8rem;
+            padding: 0.4rem 0.8rem;
+        }
+    }
+    /* Footer */
+    footer {
+        background: #f8f5f0;
+        padding: 3rem 1rem 1rem;
+        margin-top: 4rem;
+    }
+
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+
+    .footer-section h3 {
+        color: #a23e6d;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .social-links a {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #666;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+    .social-links a:hover {
+        color: #a23e6d;
+    }
+
+    .footer-section a {
+        display: block;
+        color: #666;
+        text-decoration: none;
+        margin-bottom: 0.5rem;
+        transition: color 0.2s;
+    }
+
+    .footer-section a:hover {
+        color: #a23e6d;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(162,62,109,0.1);
+        color: #888;
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+        .social-float {
+            display: none;
+        }
+
+        .whatsapp-btn {
+            width: 50px;
+            height: 50px;
+            bottom: 15px;
+            right: 15px;
+        }
+
+        #btn-top {
+            width: 35px;
+            height: 35px;
+            bottom: 75px;
+            right: 15px;
+            font-size: 1rem;
+        }
+
+        footer {
+            padding: 2rem 1rem 1rem;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            gap: 1.5rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .whatsapp-btn {
+            width: 45px;
+            height: 45px;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        #btn-top {
+            width: 30px;
+            height: 30px;
+            bottom: 65px;
+            right: 10px;
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom {
+            font-size: 0.8rem;
+        }
+    }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="images/logo_redondo.png" alt="Logo Tierra Dulce Repostería artesanal" width="80" height="80" loading="eager">
+            </div>
+            <input type="checkbox" id="menu-toggle" style="display:none;">
+            <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú">&#9776;</label>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="login-btn" aria-label="Iniciar sesión">Ingresar</a>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>DE NUESTRO HORNO A TU CORAZÓN</h1>
+                <p>Repostería artesanal en Villavicencio. Pasteles y postres hechos con amor, ingredientes frescos y recetas únicas para endulzar tus momentos especiales.</p>
+                <a href="#productos" class="cta-btn">Ver productos</a>
+            </div>
+            <div class="hero-img">
+                <img src="images/Banner_pagina.png" 
+                     alt="Pastel artesanal decorado, repostería en Villavicencio" 
+                     width="600" 
+                     height="400" 
+                     fetchpriority="high"
+                     loading="eager">
+            </div>
+        </div>
+    </section>
+    <section class="promociones" id="promociones">
+        <h2>Promociones</h2>
+        <div id="promos-dinamicas" class="promo-list"></div>
+    </section>
+    <script src="js/promociones.js"></script>
+    <script>
+    const promoGrid = document.getElementById('promos-dinamicas');
+    promociones.forEach(p => {
+      const div = document.createElement('div');
+      div.className = 'promo-item';
+      div.innerHTML = `<strong>${p.titulo}</strong> <span style='margin-left:8px;'>${p.descripcion}</span>`;
+      promoGrid.appendChild(div);
+    });
+    </script>
+    <section class="popular-products">
+        <h2>Productos Populares</h2>
+        <div id="productos-dinamicos" class="products-grid"></div>
+    </section>
+    <script src="js/productos.js"></script>
+    <script>
+    const grid = document.getElementById('productos-dinamicos');
+    productos.forEach((producto, index) => {
+      const card = document.createElement('div');
+      card.className = 'product-card';
+      const loadingAttr = index < 2 ? '' : 'loading="lazy"';
+      card.innerHTML = `
+        <img src="${producto.imagen}" alt="${producto.alt}" ${loadingAttr}>
+        <h3>${producto.nombre}</h3>
+        <p>${producto.precio}</p>
+        <div class="share-buttons">
+          <a href="https://wa.me/?text=¡Mira este producto de Tierra Dulce! https://tierradulcereposteria.github.io/" target="_blank" aria-label="Compartir en WhatsApp">Compartir WhatsApp</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://tierradulcereposteria.github.io/" target="_blank" aria-label="Compartir en Facebook">Compartir Facebook</a>
+        </div>
+        <a class="comprar-btn" href="https://wa.me/573001234567?text=Estoy%20interesado%20en%20comprar%20${encodeURIComponent(producto.nombre)}" target="_blank" aria-label="Comprar ${producto.nombre} por WhatsApp">Comprar</a>
+      `;
+      grid.appendChild(card);
+    });
+    </script>
+    <section class="instagram-gallery" id="instagram-gallery">
+        <h2>Galería de Instagram</h2>
+        <div id="galeria-instagram-dinamica" class="instagram-list"></div>
+        <p style="font-size:0.9rem; color:#888;">Síguenos en <a href="https://instagram.com/tierraa.dulcee" target="_blank" rel="noopener">@tierraa.dulcee</a></p>
+    </section>
+    <script src="js/galeria.js"></script>
+    <script>
+    const galeriaGrid = document.getElementById('galeria-instagram-dinamica');
+    galeriaInstagram.forEach((item, index) => {
+      const a = document.createElement('a');
+      a.href = item.enlace;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      const loadingAttr = index < 1 ? '' : 'loading="lazy"';
+      a.innerHTML = `<img src="${item.imagen}" alt="${item.alt}" ${loadingAttr} style="width:120px;height:120px;object-fit:cover;border-radius:12px;margin:8px;box-shadow:0 2px 8px rgba(162,62,109,0.08);" />`;
+      galeriaGrid.appendChild(a);
+    });
+    </script>
+    <section class="testimonios" id="testimonios">
+        <h2>Testimonios</h2>
+        <div id="testimonios-dinamicos" class="testimonios-list"></div>
+    </section>
+    <script src="js/testimonios.js"></script>
+    <script>
+    const testGrid = document.getElementById('testimonios-dinamicos');
+    testimonios.forEach(t => {
+      const div = document.createElement('div');
+      div.className = 'testimonio';
+      div.innerHTML = `<p>"${t.mensaje}"</p><span>- ${t.nombre}, ${t.ciudad}</span>`;
+      testGrid.appendChild(div);
+    });
+    </script>
+    <section class="google-reviews" id="google-reviews">
+        <h2>Reseñas de Google</h2>
+        <div id="google-reviews-dinamicas" class="reviews-list"></div>
+    </section>
+    <script src="js/google-reviews.js"></script>
+    <script>
+    const googleGrid = document.getElementById('google-reviews-dinamicas');
+    googleReviews.forEach(r => {
+      const div = document.createElement('div');
+      div.className = 'review-item';
+      div.innerHTML = `<span class='review-stars'>${'★'.repeat(r.estrellas)}</span><p>"${r.mensaje}"</p><span>- ${r.nombre}</span>`;
+      googleGrid.appendChild(div);
+    });
+    </script>
+    <section class="faq" id="faq">
+        <h2>Preguntas Frecuentes</h2>
+        <div id="faq-dinamico" class="faq-list"></div>
+    </section>
+    <script src="js/faq.js"></script>
+    <script>
+    const faqGrid = document.getElementById('faq-dinamico');
+    faqs.forEach(f => {
+      const div = document.createElement('div');
+      div.className = 'faq-item';
+      div.innerHTML = `<h3>${f.pregunta}</h3><p>${f.respuesta}</p>`;
+      faqGrid.appendChild(div);
+    });
+    </script>
+    <section class="pedido-rapido" id="pedido-rapido">
+        <h2>Pedido Rápido</h2>
+        <form class="pedido-form">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            <input type="text" name="producto" placeholder="Producto o tipo de pastel" required>
+            <input type="text" name="telefono" placeholder="Tu teléfono (opcional)">
+            <textarea name="mensaje" placeholder="Detalles del pedido o mensaje" required></textarea>
+            <button type="submit">Enviar pedido</button>
+        </form>
+    </section>
+    <section class="newsletter" id="newsletter">
+        <h2>Suscríbete y recibe novedades</h2>
+        <form class="newsletter-form">
+            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            <button type="submit">Suscribirme</button>
+        </form>
+    </section>
+    <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <div class="contacto-content">
+            <form class="contact-form" action="mailto:tierradulcerepo@gmail.com" method="POST" enctype="text/plain">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <textarea name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+            <div class="contact-info">
+                <p><strong>Dirección:</strong> Carrera 36 a #16 65, Villavicencio, Meta</p>
+                <p><strong>Teléfono:</strong> <a href="tel:+573001234567">+57 300 123 4567</a></p>
+                <p><strong>Email:</strong> <a href="mailto:tierradulcerepo@gmail.com">tierradulcerepo@gmail.com</a></p>
+                <!-- Redes sociales -->
+                <div class="redes-list">
+                    <a href="https://instagram.com/tierraa.dulcee" target="_blank" rel="noopener" aria-label="Síguenos en Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="currentColor"/>
+                        </svg>
+                        <span>@tierraa.dulcee</span>
+                    </a>
+                    <a href="https://facebook.com/tierradulcereposteria" target="_blank" rel="noopener" aria-label="Síguenos en Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="currentColor"/>
+                        </svg>
+                        <span>Tierra Dulce</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mapa">
+        </div>
+        <section class="mapa-interactivo" id="mapa-interactivo">
+            <div class="mapa-wrapper">
+                <!-- El mapa se cargará dinámicamente desde mapa.js -->
+            </div>
+            <h2>¿Cómo llegar?</h2>
+            <p>Puedes ver la mejor ruta desde tu ubicación en Google Maps:</p>
+            <a class="mapa-btn" href="https://www.google.com/maps/dir/?api=1&destination=4.1329229,-73.6299253" target="_blank" rel="noopener">Ver ruta en Google Maps</a>
+        </section>
+    </section>
+    <!-- Redes sociales -->
+    <div class="redes-list">
+        <a href="https://instagram.com/tierraa.dulcee" target="_blank" rel="noopener" aria-label="Síguenos en Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="currentColor"/>
+            </svg>
+            <span>@tierraa.dulcee</span>
+        </a>
+        <a href="https://facebook.com/tierradulcereposteria" target="_blank" rel="noopener" aria-label="Síguenos en Facebook">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="currentColor"/>
+            </svg>
+            <span>Tierra Dulce</span>
+        </a>
+    </div>
+
+    <!-- Botones flotantes -->
+    <a href="#" class="btn-top" id="btn-top" aria-label="Volver arriba">↑</a>
+    <a href="https://wa.me/573001234567" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chatear por WhatsApp">
+        <img src="images/whatsapp.svg" alt="WhatsApp" width="24" height="24">
+    </a>
+
+    <script>
+    if(!localStorage.getItem('cookiesAccepted')){
+      document.getElementById('cookie-banner').style.display='block';
+      document.getElementById('cookie-banner').querySelector('button').onclick = function(){
+        document.getElementById('cookie-banner').style.display='none';
+        localStorage.setItem('cookiesAccepted','1');
+      }
+    }
+    const btnTop = document.getElementById('btn-top');
+    window.addEventListener('scroll',()=>{
+      if(window.scrollY>300){btnTop.classList.add('show');}else{btnTop.classList.remove('show');}
+    });
+    btnTop.onclick = ()=>{window.scrollTo({top:0,behavior:'smooth'});};
+    function animateOnScroll(){
+      document.querySelectorAll('[data-animate]').forEach(el=>{
+        const rect = el.getBoundingClientRect();
+        if(rect.top<window.innerHeight-60){el.classList.add('visible');}
+      });
+    }
+    window.addEventListener('scroll',animateOnScroll);
+    window.addEventListener('DOMContentLoaded',()=>{
+      document.querySelectorAll('section, .product-card, .promo-item, .review-item').forEach(el=>el.setAttribute('data-animate',''));
+      animateOnScroll();
+    });
+    </script>
+    <!-- Modal de privacidad/cookies -->
+    <div id="modal-legal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.5);z-index:3000;align-items:center;justify-content:center;">
+        <div id="modal-legal-content" style="background:#fff;color:#333;max-width:500px;width:90vw;padding:2rem 1.5rem;border-radius:16px;position:relative;box-shadow:0 4px 32px rgba(0,0,0,0.18);">
+            <button id="modal-legal-close" aria-label="Cerrar" style="position:absolute;top:12px;right:16px;background:none;border:none;font-size:1.5rem;color:#a23e6d;cursor:pointer;">&times;</button>
+            <div id="modal-legal-text"></div>
+        </div>
+    </div>
+    <script>
+    const privacidadText = `<h2 style='color:#a23e6d;'>Política de Privacidad</h2><p>En Tierra Dulce Repostería artesanal respetamos tu privacidad. No compartimos tus datos con terceros. Solo usamos tu información para responder tus mensajes, pedidos o suscripciones. Puedes solicitar la eliminación de tus datos en cualquier momento escribiendo a nuestro correo.</p>`;
+    const cookiesText = `<h2 style='color:#a23e6d;'>Aviso de Cookies</h2><p>Este sitio utiliza cookies técnicas y de sesión para mejorar tu experiencia. No usamos cookies de rastreo ni publicidad. Al navegar por el sitio, aceptas el uso de cookies necesarias para su funcionamiento.</p>`;
+    document.getElementById('privacidad-link').onclick = function(e){
+      e.preventDefault();
+      document.getElementById('modal-legal-text').innerHTML = privacidadText;
+      document.getElementById('modal-legal').style.display = 'flex';
+    };
+    document.getElementById('cookies-link').onclick = function(e){
+      e.preventDefault();
+      document.getElementById('modal-legal-text').innerHTML = cookiesText;
+      document.getElementById('modal-legal').style.display = 'flex';
+    };
+    document.getElementById('modal-legal-close').onclick = function(){
+      document.getElementById('modal-legal').style.display = 'none';
+    };
+    document.getElementById('modal-legal').onclick = function(e){
+      if(e.target === this){ this.style.display = 'none'; }
+    };
+    </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- Tawk.to chat en vivo -->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];s1.async=true;s1.src='https://embed.tawk.to/64e4e7e1cc26a871b02e7b2e/1h8k9k8k9';s1.charset='UTF-8';s1.setAttribute('crossorigin','*');s0.parentNode.insertBefore(s1,s0);})();
+    </script>
+    <!-- Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/mapa.js"></script>
+    <script>
+    // Mejora de rendimiento para imágenes
+    document.addEventListener('DOMContentLoaded', function() {
+        const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.classList.add('loaded');
+                    observer.unobserve(img);
+                }
+            });
+        });
+
+        lazyImages.forEach(img => imageObserver.observe(img));
+    });
+
+    // Mejora de accesibilidad para el menú
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuIcon = document.querySelector('.menu-icon');
+
+    menuToggle.addEventListener('change', function() {
+        const isExpanded = this.checked;
+        menuIcon.setAttribute('aria-expanded', isExpanded);
+        menuIcon.setAttribute('aria-label', isExpanded ? 'Cerrar menú' : 'Abrir menú');
+    });
+
+    // Cerrar menú al hacer clic fuera
+    document.addEventListener('click', function(e) {
+        if (!menuIcon.contains(e.target) && !menuToggle.contains(e.target)) {
+            menuToggle.checked = false;
+            menuIcon.setAttribute('aria-expanded', 'false');
+            menuIcon.setAttribute('aria-label', 'Abrir menú');
+        }
+    });
+
+    // Mejora de rendimiento para animaciones
+    const animateOnScroll = () => {
+        const elements = document.querySelectorAll('[data-animate]');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '50px'
+        });
+
+        elements.forEach(el => observer.observe(el));
+    };
+
+    // Inicializar animaciones
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('section, .product-card, .promo-item, .review-item')
+            .forEach(el => el.setAttribute('data-animate', ''));
+        animateOnScroll();
+    });
+
+    // Mejorar rendimiento del scroll
+    let scrollTimeout;
+    window.addEventListener('scroll', () => {
+        if (!scrollTimeout) {
+            scrollTimeout = setTimeout(() => {
+                scrollTimeout = null;
+                // Actualizar botón "volver arriba"
+                const btnTop = document.getElementById('btn-top');
+                if (btnTop) {
+                    btnTop.classList.toggle('show', window.scrollY > 300);
+                }
+            }, 100);
+        }
+    }, { passive: true });
+    </script>
+    <!-- Botón de Políticas -->
+    <div class="politicas-floating-btn" style="position: fixed; bottom: 24px; left: 24px; z-index: 1000;">
+        <button class="politica-btn" id="btn-politicas" style="display: flex; align-items: center; gap: 0.8rem; background: #fff; color: #a23e6d; border: 2px solid #a23e6d; padding: 0.8rem 1.2rem; border-radius: 30px; font-family: 'Quicksand', Arial, sans-serif; font-weight: 700; font-size: 1.1rem; cursor: pointer; box-shadow: 0 2px 8px rgba(162,62,109,0.08);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" fill="currentColor"/>
+            </svg>
+            Políticas Legales
+        </button>
+    </div>
+
+    <!-- Modal de Políticas -->
+    <div id="modal-politicas" class="modal-politicas" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 2000; align-items: center; justify-content: center;">
+        <div class="modal-content" style="background: #fff; width: 90%; max-width: 800px; max-height: 90vh; border-radius: 16px; position: relative; overflow: hidden; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);">
+            <button class="modal-close" aria-label="Cerrar" style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; font-size: 2rem; color: #a23e6d; cursor: pointer; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; z-index: 1;">×</button>
+            <div class="modal-header" style="padding: 2rem 2rem 1rem; border-bottom: 1px solid rgba(162,62,109,0.1);">
+                <h2 id="modal-titulo" style="color: #a23e6d; font-size: 1.8rem; margin: 0;">Políticas Legales</h2>
+            </div>
+            <div class="modal-body" id="modal-contenido" style="padding: 2rem; overflow-y: auto; max-height: calc(90vh - 120px);">
+                <!-- El contenido se cargará dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+    // Contenido de las políticas
+    const politicasContenido = {
+        datos: {
+            titulo: "Política de Tratamiento de Datos Personales",
+            contenido: `
+                <p>En Tierra Dulce Repostería artesanal, nos comprometemos a proteger tus datos personales. Esta política describe cómo recopilamos, usamos y protegemos tu información:</p>
+                <ul>
+                    <li><strong>Datos que recopilamos:</strong> Nombre, correo electrónico, teléfono y dirección cuando realizas un pedido o contacto.</li>
+                    <li><strong>Uso de datos:</strong> Para procesar pedidos, responder consultas y enviar información relevante sobre nuestros productos.</li>
+                    <li><strong>Protección:</strong> Implementamos medidas de seguridad para proteger tu información personal.</li>
+                    <li><strong>Tus derechos:</strong> Puedes solicitar acceso, rectificación o eliminación de tus datos en cualquier momento.</li>
+                </ul>
+                <p>Para ejercer tus derechos o consultas sobre el tratamiento de datos, contáctanos a <a href="mailto:tierradulcerepo@gmail.com">tierradulcerepo@gmail.com</a></p>
+            `
+        },
+        cookies: {
+            titulo: "Política de Cookies",
+            contenido: `
+                <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio web:</p>
+                <ul>
+                    <li><strong>Cookies esenciales:</strong> Necesarias para el funcionamiento básico del sitio.</li>
+                    <li><strong>Cookies de rendimiento:</strong> Nos ayudan a entender cómo interactúas con nuestro sitio.</li>
+                    <li><strong>Cookies de funcionalidad:</strong> Permiten recordar tus preferencias.</li>
+                </ul>
+                <p>Puedes controlar y/o eliminar las cookies según desees. Puedes eliminar todas las cookies que ya están en tu computadora y puedes configurar la mayoría de los navegadores para evitar que se coloquen.</p>
+            `
+        }
+    };
+
+    // Funcionalidad del modal
+    const modal = document.getElementById('modal-politicas');
+    const modalTitulo = document.getElementById('modal-titulo');
+    const modalContenido = document.getElementById('modal-contenido');
+    const btnCerrar = document.querySelector('.modal-close');
+    const btnPoliticas = document.getElementById('btn-politicas');
+
+    function abrirModal() {
+        modalTitulo.textContent = "Políticas Legales";
+        modalContenido.innerHTML = `
+            <div class="politicas-tabs" style="display: flex; gap: 1rem; margin-bottom: 2rem; border-bottom: 2px solid rgba(162,62,109,0.1); padding-bottom: 1rem;">
+                <button class="tab-btn active" data-tab="datos" style="background: none; border: none; color: #a23e6d; font-weight: 700; padding: 0.5rem 1rem; cursor: pointer; position: relative;">Tratamiento de Datos</button>
+                <button class="tab-btn" data-tab="cookies" style="background: none; border: none; color: #666; font-weight: 700; padding: 0.5rem 1rem; cursor: pointer; position: relative;">Cookies</button>
+            </div>
+            <div class="tab-content active" id="tab-datos" style="display: block;">
+                ${politicasContenido.datos.contenido}
+            </div>
+            <div class="tab-content" id="tab-cookies" style="display: none;">
+                ${politicasContenido.cookies.contenido}
+            </div>
+        `;
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        
+        // Inicializar tabs
+        const tabs = document.querySelectorAll('.tab-btn');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => {
+                    t.classList.remove('active');
+                    t.style.color = '#666';
+                });
+                tab.classList.add('active');
+                tab.style.color = '#a23e6d';
+                document.querySelectorAll('.tab-content').forEach(content => {
+                    content.style.display = 'none';
+                });
+                document.getElementById(`tab-${tab.dataset.tab}`).style.display = 'block';
+            });
+        });
+    }
+
+    function cerrarModal() {
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
+    }
+
+    btnPoliticas.addEventListener('click', abrirModal);
+    btnCerrar.addEventListener('click', cerrarModal);
+
+    // Cerrar modal al hacer clic fuera
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) cerrarModal();
+    });
+
+    // Cerrar modal con la tecla Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.style.display === 'flex') cerrarModal();
+    });
+    </script>
+
+    <!-- Footer con derechos reservados -->
+    <footer class="footer-derechos" style="background: #f8f5f0; padding: 2rem 1rem; margin-top: 4rem; border-top: 1px solid rgba(162,62,109,0.1);">
+        <div class="footer-content" style="max-width: 1200px; margin: 0 auto; text-align: center;">
+            <div class="footer-logo" style="margin-bottom: 1.5rem;">
+                <img src="images/logo_redondo.png" alt="Logo Tierra Dulce" width="80" height="80" style="border-radius: 50%; box-shadow: 0 2px 8px rgba(162,62,109,0.08);">
+            </div>
+            <h3 style="color: #a23e6d; font-family: 'Quicksand', Arial, sans-serif; font-size: 1.8rem; margin-bottom: 1rem;">Tierra Dulce Repostería Artesanal</h3>
+            <p style="color: #666; font-family: 'Quicksand', Arial, sans-serif; font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">
+                Endulzando momentos especiales desde 2025
+            </p>
+            <div class="footer-derechos-texto" style="color: #888; font-family: 'Quicksand', Arial, sans-serif; font-size: 0.9rem; padding-top: 1.5rem; border-top: 1px solid rgba(162,62,109,0.1);">
+                <p style="margin-bottom: 0.5rem;">© 2025 Tierra Dulce Repostería Artesanal. Todos los derechos reservados.</p>
+                <p style="margin-bottom: 0.5rem;">Carrera 36 a #16 65, Villavicencio, Meta, Colombia</p>
+                <p>Diseñado con ❤️ por <a href="https://github.com/ingfcetina" target="_blank" rel="noopener" style="color: #a23e6d; text-decoration: none; transition: color 0.2s;">@ingfcetina</a> para nuestros clientes</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

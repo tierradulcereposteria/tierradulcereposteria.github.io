@@ -1,0 +1,21 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de IDE/editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de dependencias
+node_modules/
+package-lock.json
+
+# Archivos de entorno
+.env
+.env.local
+
+# Archivos de caché
+.cache/
+*.log 
