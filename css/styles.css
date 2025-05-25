@@ -127,13 +127,13 @@ nav a:hover {
     color: var(--color-blanco);
 }
 .hero-img img {
-    width: 480px;
-    max-width: 90vw;
+    display: block;
+    max-width: 100%;
+    height: auto;
     border-radius: 28px;
     box-shadow: var(--sombra-suave);
     background: #fff;
     margin: 0 auto;
-    display: block;
 }
 .cakes {
     background: var(--color-vanilla);
@@ -240,8 +240,8 @@ footer {
     }
     .hero-img img {
         margin-top: 2rem;
-        width: 98vw;
         max-width: 98vw;
+        height: auto;
     }
     .cakes-list {
         flex-direction: column;
