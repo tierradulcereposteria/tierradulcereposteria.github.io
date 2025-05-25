@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+                            http://www.google.com/schemas/sitemap-image/1.1
+                            http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
+  <url>
+    <loc>https://tierradulcereposteria.github.io/</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://tierradulcereposteria.github.io/images/Banner_pagina.png</image:loc>
+      <image:title>Repostería Artesanal en Villavicencio - Tierra Dulce</image:title>
+      <image:caption>Brownies, pasteles, tortas y cupcakes artesanales en Villavicencio</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://tierradulcereposteria.github.io/images/logo_redondo.png</image:loc>
+      <image:title>Logo Tierra Dulce Repostería</image:title>
+    </image:image>
+  </url>
+</urlset> 

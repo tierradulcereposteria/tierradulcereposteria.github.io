@@ -1,0 +1,27 @@
+# Permitir a todos los robots
+User-agent: *
+Allow: /
+
+# Instrucciones específicas para Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Instrucciones para imágenes de Google
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Instrucciones para el rastreador de Bing
+User-agent: Bingbot
+Allow: /
+
+# Bloquear rastreadores maliciosos
+User-agent: BadBot
+Disallow: /
+
+# Ubicación del sitemap
+Sitemap: https://tierradulcereposteria.github.io/sitemap.xml
+
+# Tiempo entre visitas (en segundos)
+Crawl-delay: 10 
