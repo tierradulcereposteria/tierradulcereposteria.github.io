@@ -230,7 +230,8 @@ footer {
 }
 .footer-derechos h3 {
     color: var(--color-primario) !important;
-    font-family: 'Pacifico', 'Quicksand', Arial, sans-serif;
+    font-family: 'Quicksand', Arial, sans-serif;
+    font-weight: 700;
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
