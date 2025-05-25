@@ -1016,4 +1016,15 @@ h3 { font-size: 1.2rem; }
 }
 .instagram-float:hover svg {
     color: var(--color-acento) !important;
+}
+.contador-visitas {
+  margin-top: 1.2rem;
+  font-family: 'Quicksand', Arial, sans-serif;
+  color: var(--color-primario);
+  font-size: 1.1rem;
+  background: var(--color-vanilla);
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(128,150,113,0.08);
 } 
