@@ -59,6 +59,9 @@
     <!-- Menú hamburguesa -->
     <style>
     #menu-toggle { display: none; }
+    html {
+        scroll-behavior: smooth;
+    }
     /* Hero section */
     .hero {
         background: #f8f5f0;
@@ -584,7 +587,7 @@
       promoGrid.appendChild(div);
     });
     </script>
-    <section class="popular-products">
+    <section class="popular-products" id="productos">
         <h2>Productos Populares</h2>
         <div id="productos-dinamicos" class="products-grid"></div>
     </section>
